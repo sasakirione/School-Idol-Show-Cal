@@ -25,8 +25,8 @@ npm run formatter
 ## アーキテクチャ
 
 ### データフロー
-- **楽曲データ**: `src/app/page.tsx`でビルド時にローカルの`data/song.csv`から読み込み
-- **カードデータ**: 実行時にリモートCSV（`https://sasakirione.github.io/School-Idol-Show-Data/data/card.csv`）から取得
+- **楽曲データ**: 実行時にリモートCSV（`https://sasakirione.github.io/School-Idol-Show-Data/data/song.csv` ）から取得
+- **カードデータ**: 実行時にリモートCSV（`https://sasakirione.github.io/School-Idol-Show-Data/data/card.csv` ）から取得
 - **状態管理**: メインの`ScoreSimulator`コンポーネントでReact useStateを使用、propsで子コンポーネントに渡す
 - **リアルタイム計算**: 状態変更時にフッターで実質ステータスを計算・表示
 
@@ -56,8 +56,8 @@ npm run formatter
 - リアルタイム検証とステータス計算
 
 ## データソース
-- ローカル楽曲CSV: `data/song.csv`（ビルド時）
-- リモートカードCSV: 外部GitHub Pages URL（実行時）
+- リモート楽曲CSV: 外部GitHub Pages URL（`https://sasakirione.github.io/School-Idol-Show-Data/data/song.csv`）
+- リモートカードCSV: 外部GitHub Pages URL（`https://sasakirione.github.io/School-Idol-Show-Data/data/card.csv`）
 - フォールバック: リモート取得失敗時は空配列
 
 ## スタイリング・UI
@@ -73,3 +73,6 @@ npm run formatter
 - フックを使用した関数コンポーネント
 - 計算には純粋関数を優先
 - 全コンポーネントでPropsインターフェース使用
+
+## vcs
+作業単位毎

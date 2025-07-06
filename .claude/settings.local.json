@@ -4,7 +4,8 @@
       "Bash(npx tsc:*)",
       "Bash(gemini:*)",
       "Bash(curl:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(gh issue create:*)"
     ],
     "deny": []
   }

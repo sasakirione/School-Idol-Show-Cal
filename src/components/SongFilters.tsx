@@ -1,13 +1,13 @@
 import { Attribute, Idol, IDOLS } from "@/types";
 
-interface SongFiltersProps {
+type SongFiltersProps = {
   searchQuery: string;
   onSearchChange: (query: string) => void;
   attributeFilter: "All" | Attribute;
   onAttributeFilterChange: (attribute: "All" | Attribute) => void;
   centerFilter: Idol | null;
   onCenterFilterChange: (center: Idol | null) => void;
-}
+};
 
 export function SongFilters({
   searchQuery,

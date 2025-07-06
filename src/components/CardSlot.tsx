@@ -2,12 +2,12 @@ import { Card } from "@/types";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
-interface CardSlotProps {
+type CardSlotProps = {
   card: Card | null;
   index: number;
   onClick: (index: number) => void;
   onDeselect: (index: number) => void;
-}
+};
 
 export function CardSlot({ card, index, onClick, onDeselect }: CardSlotProps) {
   const {

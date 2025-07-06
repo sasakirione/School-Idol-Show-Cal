@@ -1,10 +1,10 @@
 import { Card, Song } from "@/types";
 import { calculateEffectiveStats } from "@/utils/scoreCalculation";
 
-interface EffectiveStatsFooterProps {
+type EffectiveStatsFooterProps = {
   selectedCards: (Card | null)[];
   selectedSong: Song | null;
-}
+};
 
 export function EffectiveStatsFooter({
   selectedCards,

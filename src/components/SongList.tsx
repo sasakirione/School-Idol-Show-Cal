@@ -2,10 +2,10 @@ import { Song } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
 
-interface SongJacketProps {
+type SongJacketProps = {
   songId: number;
   songName: string;
-}
+};
 
 function SongJacket({ songId, songName }: SongJacketProps) {
   const [imageError, setImageError] = useState(false);
@@ -32,11 +32,11 @@ function SongJacket({ songId, songName }: SongJacketProps) {
   );
 }
 
-interface SongListProps {
+type SongListProps = {
   songs: Song[];
   selectedSong: Song | null;
   onSongSelect: (song: Song) => void;
-}
+};
 
 export function SongList({ songs, selectedSong, onSongSelect }: SongListProps) {
   return (

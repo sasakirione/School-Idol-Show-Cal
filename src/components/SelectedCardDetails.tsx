@@ -1,9 +1,9 @@
 import { Card } from "@/types";
 
-interface SelectedCardDetailsProps {
+type SelectedCardDetailsProps = {
   selectedCards: (Card | null)[];
   totalScore: number;
-}
+};
 
 const getAttributeColor = (attribute: string): string => {
   switch (attribute) {

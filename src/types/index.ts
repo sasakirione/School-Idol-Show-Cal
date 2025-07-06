@@ -1,4 +1,4 @@
-export interface Card {
+export type Card = {
   id: number;
   name: string;
   series: string;
@@ -9,9 +9,9 @@ export interface Card {
   rarity: "N" | "R" | "SR" | "SSR";
   attribute: Attribute;
   centerAbility: CenterAbility;
-}
+};
 
-export interface CSVCard {
+export type CSVCard = {
   id: number;
   rare: "N" | "R" | "SR" | "SSR" | "UR";
   series: string;
@@ -22,7 +22,7 @@ export interface CSVCard {
   "120C": number;
   "120M": number;
   center1: CenterAbility;
-}
+};
 
 export type CenterAbility = 0 | 1 | 2 | 3 | 4 | 5;
 
@@ -42,12 +42,12 @@ export const IDOLS = [
 ] as const;
 export type Idol = (typeof IDOLS)[number];
 
-export interface Song {
+export type Song = {
   id: number;
   name: string;
   attribute: Attribute;
   center: Idol;
-}
+};
 
 export type Difficulty = "NORMAL" | "HARD" | "EXPERT" | "MASTER";
 export type Attribute = "Smile" | "Cool" | "Pure";

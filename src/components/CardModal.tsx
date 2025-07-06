@@ -1,7 +1,7 @@
 import { Card, Idol, IDOLS } from "@/types";
 import { useState } from "react";
 
-interface CardModalProps {
+type CardModalProps = {
   isOpen: boolean;
   onClose: () => void;
   cards: Card[];
@@ -9,7 +9,7 @@ interface CardModalProps {
   editingSlotIndex: number | null;
   onCardSelect: (card: Card) => void;
   onCardRemove: () => void;
-}
+};
 
 export function CardModal({
   isOpen,

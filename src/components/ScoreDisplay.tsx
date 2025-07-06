@@ -1,6 +1,6 @@
-interface ScoreDisplayProps {
+type ScoreDisplayProps = {
   score: number;
-}
+};
 
 export function ScoreDisplay({ score }: ScoreDisplayProps) {
   if (score <= 0) return null;

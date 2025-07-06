@@ -17,12 +17,12 @@ import {
   horizontalListSortingStrategy,
 } from "@dnd-kit/sortable";
 
-interface CardSelectionProps {
+type CardSelectionProps = {
   selectedCards: (Card | null)[];
   onCardSlotClick: (index: number) => void;
   onCardDeselect: (index: number) => void;
   onCardReorder: (newCards: (Card | null)[]) => void;
-}
+};
 
 export function CardSelection({
   selectedCards,

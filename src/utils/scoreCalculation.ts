@@ -1,11 +1,11 @@
 import { Card, CenterAbility, Idol, Song, Status } from "@/types";
 
-export interface EffectiveStats {
+export type EffectiveStats = {
   smile: number;
   pure: number;
   cool: number;
   total: number;
-}
+};
 
 /**
  * 実質ステータスを計算する関数

@@ -3,7 +3,7 @@ import { SongFilters } from "./SongFilters";
 import { SongList } from "./SongList";
 import { DifficultySelector } from "./DifficultySelector";
 
-interface SongSelectionProps {
+type SongSelectionProps = {
   songs: Song[];
   selectedSong: Song | null;
   onSongSelect: (song: Song) => void;
@@ -15,7 +15,7 @@ interface SongSelectionProps {
   onCenterFilterChange: (center: Idol | null) => void;
   selectedDifficulty: Difficulty;
   onDifficultyChange: (difficulty: Difficulty) => void;
-}
+};
 
 export function SongSelection({
   songs,

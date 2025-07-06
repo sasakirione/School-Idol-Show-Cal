@@ -1,10 +1,10 @@
 import { Difficulty } from "@/types";
 
-interface DifficultySelectorProps {
+type DifficultySelectorProps = {
   selectedDifficulty: Difficulty;
   onDifficultyChange: (difficulty: Difficulty) => void;
   songName?: string;
-}
+};
 
 export function DifficultySelector({
   selectedDifficulty,
